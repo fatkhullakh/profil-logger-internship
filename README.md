@@ -29,18 +29,20 @@ The logging system lets you:
 
 ## 📁 Project Structure
 profil_logger/
-├── handler/ # Handlers for saving logs to various formats
-│ ├── base.py
-│ ├── json_handler.py
-│ ├── csv_handler.py
-│ ├── file_handler.py
-│ └── sqlite_handler.py
-├── tests/ # Unit tests using pytest
-│ ├── test_logger.py
-│ └── test_reader.py
-├── logger.py # Main logging interface
-├── reader.py # Log reading & filtering logic
-├── models.py # LogEntry dataclass
-├── init.py
-├── pyproject.toml # Config file for ruff (linter)
-└── README.md # This file
+├── handler/               # Handlers for saving logs to various formats
+│   ├── base.py
+│   ├── csv_handler.py
+│   ├── file_handler.py
+│   ├── json_handler.py
+│   └── sqlite_handler.py
+│
+├── tests/                 # Unit tests for logger and reader
+│   ├── test_logger.py
+│   └── test_reader.py
+│
+├── logger.py              # Main logging logic and entry point
+├── reader.py              # Logic for reading, filtering, grouping logs
+├── models.py              # LogEntry model (with serialization logic)
+├── __init__.py
+├── pyproject.toml         # Linting config (for ruff)
+└── README.md              # Documentation (this file)
