@@ -28,6 +28,7 @@ The logging system lets you:
 ---
 
 ## 📁 Project Structure
+```
 profil_logger/
 ├── handler/               # Handlers for saving logs to various formats
 │   ├── base.py
@@ -46,3 +47,5 @@ profil_logger/
 ├── __init__.py
 ├── pyproject.toml         # Linting config (for ruff)
 └── README.md              # Documentation (this file)
+```
+---
